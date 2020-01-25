@@ -2,7 +2,7 @@ import React from "react";
 import { Box } from "grommet";
 
 const OuterBox = props => {
-  const { oHeight, background, round, children } = props;
+  const { oHeight, background, round, children, border } = props;
   return (
     <Box
       height={oHeight}
@@ -13,6 +13,7 @@ const OuterBox = props => {
       basis="auto"
       flex
       responsive
+      border={border || null}
       round={round || null}
     >
       {children}

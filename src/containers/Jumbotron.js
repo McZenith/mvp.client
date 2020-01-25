@@ -3,7 +3,7 @@ import { Section } from "../common";;
 
 const Jumbotron = () => {
   return (
-    <Section oHeight="80vh" background="#F9E6EF">
+    <Section oHeight="80vh" background="white">
       Hello World
     </Section>
   );

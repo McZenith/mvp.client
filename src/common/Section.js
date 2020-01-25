@@ -3,12 +3,13 @@ import { ResponsiveContext } from "grommet";
 import { OuterBox, InnerBox } from "../component";
 
 const Section = props => {
-  const { children, oHeight, background, align, justify, iWidth } = props;
+  const { children, oHeight, background, align, justify, iWidth, border } = props;
   let size = useContext(ResponsiveContext);
   return (
     <OuterBox
       oHeight={oHeight}
       background={size !== "small" ? background : "brand"}
+      border={border}
     >
       <InnerBox
         direction={size === "small" ? "column-reverse" : "row"}
